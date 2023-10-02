@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 02</title>
+</head>
+<body>
+    <body>
+        <p><a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self"
+        href="http://www.w3resource.com/">w3resource</a></p> <button
+        onclick="getAttributes()">Click here to get attributes value</button>
+
+        <script>
+            function getAttributes() {
+      var link = document.getElementById('w3r');
+
+      if (link) {
+        var href = link.getAttribute('href');
+        var hreflang = link.getAttribute('hreflang');
+        var rel = link.getAttribute('rel');
+        var target = link.getAttribute('target');
+        var type = link.getAttribute('type');
+
+        // Display the attributes in an alert
+        alert('href: ' + href + '\nhreflang: ' + hreflang + '\nrel: ' + rel + '\ntarget: ' + target + '\ntype: ' + type);
+      } else {
+        alert('Link with specified ID not found.');
+      }
+    }
+        </script>
+</body>
+</html>

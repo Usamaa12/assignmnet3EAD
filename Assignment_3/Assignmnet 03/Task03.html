@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM paragraph style Task 03</title>
+</head>
+<body>
+    <p id='text'>JavaScript Exercises - w3resource</p> 
+    <div>
+        <button id="jsstyle" onclick="js_style()">Style</button>
+     </div>
+        
+
+     <script>
+        function js_style() {
+            var paragraph1 =document.getElementById('text')
+            paragraph1.style.fontFamily="'Arial', sans-serif";
+            paragraph1.style.color="red";
+            paragraph1.style.fontSize='50px';
+
+
+        
+        }
+     </script>
+</body>
+</html>
